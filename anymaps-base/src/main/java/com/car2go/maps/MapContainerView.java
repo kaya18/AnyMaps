@@ -9,12 +9,16 @@ package com.car2go.maps;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 /**
  * View container for an {@link AnyMap}.
  */
 public abstract class MapContainerView extends FrameLayout {
+
+	OnInterceptTouchEvent callback;
 
 	protected MapContainerView(Context context) {
 		super(context);
@@ -65,4 +69,13 @@ public abstract class MapContainerView extends FrameLayout {
 	 */
 	public abstract void onSaveInstanceState(Bundle outState);
 
+	@Override
+	public boolean onInterceptTouchEvent(MotionEvent ev) {
+		callback.onInterceptTouchEvent(ev);
+		return super.onInterceptTouchEvent(ev);
+	}
+
+	public void setOnInterceptTouchEventListener(OnInterceptTouchEvent callback) {
+		this.callback = callback;
+	}
 }
