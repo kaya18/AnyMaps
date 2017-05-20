@@ -71,7 +71,7 @@ public abstract class MapContainerView extends FrameLayout {
 
 	@Override
 	public boolean onInterceptTouchEvent(MotionEvent ev) {
-		callback.onInterceptTouchEvent(ev);
+		if (callback != null) callback.onInterceptTouchEvent(ev);
 		return super.onInterceptTouchEvent(ev);
 	}
 
