@@ -33,4 +33,9 @@ public class UiSettingsAdapter implements UiSettings {
 	public void setMapToolbarEnabled(boolean enabled) {
 		uiSettings.setMapToolbarEnabled(enabled);
 	}
+
+	@Override
+	public void setCompassEnabled(boolean enabled) {
+		uiSettings.setCompassEnabled(enabled);
+	}
 }

@@ -17,4 +17,5 @@ public interface UiSettings {
 
 	void setMapToolbarEnabled(boolean enabled);
 
+	void setCompassEnabled(boolean enabled);
 }
