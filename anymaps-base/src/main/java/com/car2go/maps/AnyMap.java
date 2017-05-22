@@ -40,6 +40,8 @@ public interface AnyMap {
 
 	Marker addMarker(MarkerOptions options);
 
+	void clear();
+
 	Circle addCircle(CircleOptions options);
 
 	Polygon addPolygon(PolygonOptions options);

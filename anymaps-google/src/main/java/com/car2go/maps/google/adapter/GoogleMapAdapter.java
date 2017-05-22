@@ -87,6 +87,11 @@ public class GoogleMapAdapter implements AnyMap {
 	}
 
 	@Override
+	public void clear() {
+		map.clear();
+	}
+
+	@Override
 	public Circle addCircle(CircleOptions options) {
 		return drawableComponentFactory.addCircle(options);
 	}

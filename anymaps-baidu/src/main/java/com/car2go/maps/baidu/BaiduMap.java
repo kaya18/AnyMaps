@@ -89,6 +89,11 @@ public class BaiduMap implements AnyMap {
 	}
 
 	@Override
+	public void clear() {
+		map.clear();
+	}
+
+	@Override
 	public Circle addCircle(CircleOptions options) {
 		com.baidu.mapapi.map.Circle circle = (com.baidu.mapapi.map.Circle) map.addOverlay(ModelToBaiduConverter.convert(options));
 		return BaiduToModelConverter.convert(circle);
