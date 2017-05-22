@@ -131,6 +131,11 @@ public class BaiduMap implements AnyMap {
 			public void setMapToolbarEnabled(boolean enabled) {
 				// Do nothing
 			}
+
+			@Override
+			public void setCompassEnabled(boolean enabled) {
+				// Do nothing
+			}
 		};
 	}
 
