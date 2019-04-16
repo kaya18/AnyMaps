@@ -7,13 +7,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "com.car2go.example"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -29,13 +28,14 @@ android {
 }
 
 dependencies {
-    compile project(':anymaps-base')
+    api project(':anymaps-base')
 
     // If you are adding Google Maps support you also need to add Google Play Services
-    compile project(':anymaps-google')
-    compile project(':anymaps-osm')
+    api project(':anymaps-google')
+    api project(':anymaps-osm')
 
-    compile 'com.google.android.gms:play-services-maps:10.2.1'
+    implementation 'com.google.android.gms:play-services-maps:10.2.1'
 
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }
