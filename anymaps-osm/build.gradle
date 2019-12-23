@@ -13,7 +13,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     defaultConfig {
         minSdkVersion 15
@@ -26,14 +26,15 @@ android {
             minifyEnabled false
         }
     }
+    buildToolsVersion = '29.0.2'
 }
 
 dependencies {
     api project(':anymaps-base')
 
-    implementation 'org.slf4j:slf4j-simple:1.6.1'
-    implementation 'org.osmdroid:osmdroid-android:6.1.0'
+    implementation 'org.slf4j:slf4j-simple:1.7.30'
+    implementation 'org.osmdroid:osmdroid-android:6.1.5'
 
     testImplementation 'junit:junit:4.12'
-    testImplementation 'org.mockito:mockito-core:1.9.5'
+    testImplementation 'org.mockito:mockito-core:3.2.4'
 }

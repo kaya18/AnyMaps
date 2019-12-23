@@ -6,8 +6,6 @@
 
 package com.car2go.maps.google.adapter;
 
-import android.support.annotation.NonNull;
-
 import com.car2go.maps.google.adapter.factory.Mapper;
 import com.car2go.maps.google.adapter.factory.anymap.CameraPositionMapper;
 import com.car2go.maps.google.adapter.factory.anymap.CircleMapper;
@@ -41,6 +39,8 @@ import com.google.android.gms.maps.model.VisibleRegion;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import androidx.annotation.NonNull;
 
 /**
  * Utility for adapting Google entities to AnyMap and vice versa.

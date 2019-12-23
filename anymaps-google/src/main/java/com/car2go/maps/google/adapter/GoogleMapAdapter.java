@@ -7,7 +7,6 @@
 package com.car2go.maps.google.adapter;
 
 import android.Manifest;
-import android.support.annotation.RequiresPermission;
 import android.view.View;
 
 import com.car2go.maps.AnyMap;
@@ -25,6 +24,8 @@ import com.car2go.maps.model.Polyline;
 import com.car2go.maps.model.PolylineOptions;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
+
+import androidx.annotation.RequiresPermission;
 
 /**
  * Implementation of {@link AnyMap} which works with {@link com.google.android.gms.maps.GoogleMap}

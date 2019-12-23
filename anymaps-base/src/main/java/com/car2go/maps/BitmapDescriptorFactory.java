@@ -7,9 +7,10 @@
 package com.car2go.maps;
 
 import android.graphics.Bitmap;
-import android.support.annotation.DrawableRes;
 
 import com.car2go.maps.model.BitmapDescriptor;
+
+import androidx.annotation.DrawableRes;
 
 /**
  * Factory for creating BitmapDescriptors.

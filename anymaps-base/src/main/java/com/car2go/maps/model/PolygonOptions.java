@@ -6,10 +6,10 @@
 
 package com.car2go.maps.model;
 
-import android.support.annotation.ColorInt;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.ColorInt;
 
 /**
  * Accumulates parameters which are required to create {@link Polygon} component.

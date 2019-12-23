@@ -7,10 +7,11 @@
 package com.car2go.maps.google;
 
 import android.graphics.Bitmap;
-import android.support.annotation.DrawableRes;
 
 import com.car2go.maps.google.adapter.BitmapDescriptorAdapter;
 import com.car2go.maps.model.BitmapDescriptor;
+
+import androidx.annotation.DrawableRes;
 
 /**
  * Creates instances of {@link com.car2go.maps.model.BitmapDescriptor}
