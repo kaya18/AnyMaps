@@ -8,16 +8,14 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
-
+    buildToolsVersion = '29.0.2'
     defaultConfig {
         applicationId "com.car2go.example"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
     }
     buildTypes {
         release {
@@ -25,18 +23,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion = '29.0.2'
 }
 
 dependencies {
     api project(':anymaps-base')
-
     // If you are adding Google Maps support you also need to add Google Play Services
     api project(':anymaps-google')
     api project(':anymaps-osm')
-
     implementation 'com.google.android.gms:play-services-maps:10.2.1'
-
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
 }
