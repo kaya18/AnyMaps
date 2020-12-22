@@ -6,6 +6,9 @@
 
 package com.car2go.example;
 
+import android.content.Context;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 
 import com.car2go.maps.AnyMap;
@@ -22,11 +25,17 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
 	private MapContainerView mapView;
+	private LocationManager mLocService;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		mLocService = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		Location loc = mLocService.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+		final Double longitude = loc.getLongitude();
+		final Double latitude = loc.getLatitude();
 
 		MapsConfiguration.getInstance().initialize(this);
 
@@ -39,20 +48,13 @@ public class MainActivity extends AppCompatActivity {
 			public void onMapReady(AnyMap anyMap) {
 				anyMap.moveCamera(
 						CameraUpdateFactory.getInstance()
-								.newLatLngZoom(
-										new LatLng(53.5443465, 9.9289326),
-										17f
-								)
+								.newLatLngZoom(new LatLng(latitude, longitude), 21.5f)
 				);
 
 				anyMap.addMarker(
 						new MarkerOptions()
-								.position(new LatLng(53.5443465, 9.9289326))
-								.anchor(0.5f, 0.5f)
-								.icon(
-										BitmapDescriptorFactory.getInstance()
-												.fromResource(R.drawable.marker)
-								)
+								.position(new LatLng(latitude, longitude)).anchor(0.1f, 0.1f).icon(BitmapDescriptorFactory.getInstance().fromResource(R.drawable.marker)
+						)
 				);
 			}
 		});

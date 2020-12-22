@@ -33,5 +33,5 @@ dependencies {
     api project(':anymaps-base')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.1'
 }

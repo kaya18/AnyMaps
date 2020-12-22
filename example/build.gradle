@@ -35,8 +35,8 @@ dependencies {
     api project(':anymaps-google')
     api project(':anymaps-osm')
 
-    implementation 'com.google.android.gms:play-services-maps:10.2.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
 }
