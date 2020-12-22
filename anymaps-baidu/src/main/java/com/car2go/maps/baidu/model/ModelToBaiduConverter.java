@@ -48,7 +48,6 @@ public final class ModelToBaiduConverter {
 		return ((BaiduBitmapDescriptor) bitmapDescriptor).wrappedDescriptor;
 	}
 
-
 	public static com.baidu.mapapi.model.LatLngBounds convert(LatLngBounds bounds) {
 		if (bounds == null) {
 			return null;

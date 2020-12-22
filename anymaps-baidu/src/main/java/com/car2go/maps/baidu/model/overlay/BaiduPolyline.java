@@ -6,7 +6,6 @@
 
 package com.car2go.maps.baidu.model.overlay;
 
-
 import com.car2go.maps.model.Polyline;
 
 public class BaiduPolyline implements Polyline {

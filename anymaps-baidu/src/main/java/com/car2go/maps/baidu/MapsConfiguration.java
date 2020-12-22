@@ -23,7 +23,8 @@ public class MapsConfiguration implements com.car2go.maps.MapsConfiguration {
 
 	private static final MapsConfiguration instance = new MapsConfiguration();
 
-	private MapsConfiguration() {}
+	private MapsConfiguration() {
+	}
 
 	public static MapsConfiguration getInstance() {
 		return instance;

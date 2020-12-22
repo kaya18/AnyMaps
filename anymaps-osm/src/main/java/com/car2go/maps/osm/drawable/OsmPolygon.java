@@ -133,27 +133,27 @@ public class OsmPolygon implements Polygon {
 				populateHoles(projection);
 
 				// Draw outline of the holes
-                c.drawPath(polygonPath, strokePaint);
+				c.drawPath(polygonPath, strokePaint);
 
 				// Clip holes so that when we'll draw polygon on top of them the area under the
 				// holes will be "cropped"
-                c.clipPath(polygonPath, Region.Op.DIFFERENCE);
+				c.clipPath(polygonPath, Region.Op.DIFFERENCE);
 			}
 
 			if (!points.isEmpty()) {
-                if (!outsider) {
-                    polygonPath.rewind();
-                    populateOutline(projection);
+				if (!outsider) {
+					polygonPath.rewind();
+					populateOutline(projection);
 
-	                // Draw and fill polygon itself
-                    c.drawPath(polygonPath, fillPaint);
-                    c.drawPath(polygonPath, strokePaint);
-                } else {
-	                // Optimization for outsider-polygons. Just fill the whole screen with the color.
-	                // We cropped holes before, so it will appear as "transparent" polygons are
-	                // drawn.
-                    c.drawPaint(fillPaint);
-                }
+					// Draw and fill polygon itself
+					c.drawPath(polygonPath, fillPaint);
+					c.drawPath(polygonPath, strokePaint);
+				} else {
+					// Optimization for outsider-polygons. Just fill the whole screen with the color.
+					// We cropped holes before, so it will appear as "transparent" polygons are
+					// drawn.
+					c.drawPaint(fillPaint);
+				}
 			}
 
 			c.restore();

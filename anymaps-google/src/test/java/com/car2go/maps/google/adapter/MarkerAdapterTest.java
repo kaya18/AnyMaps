@@ -6,7 +6,6 @@
 
 package com.car2go.maps.google.adapter;
 
-
 import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.Marker;
 

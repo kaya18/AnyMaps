@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
 /**
  * View container for an {@link AnyMap}.

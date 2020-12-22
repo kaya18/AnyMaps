@@ -16,7 +16,6 @@
 
 package com.car2go.maps.util;
 
-
 import com.car2go.maps.model.LatLng;
 
 import java.util.ArrayList;

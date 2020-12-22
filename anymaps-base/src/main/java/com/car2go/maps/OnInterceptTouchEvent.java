@@ -7,5 +7,5 @@ import android.view.MotionEvent;
  */
 
 public interface OnInterceptTouchEvent {
-    void onInterceptTouchEvent(MotionEvent ev);
+	void onInterceptTouchEvent(MotionEvent ev);
 }

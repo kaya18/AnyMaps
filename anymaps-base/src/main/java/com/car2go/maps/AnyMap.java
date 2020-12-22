@@ -70,7 +70,6 @@ public interface AnyMap {
 
 	void onUserLocationChanged(LatLng location, float accuracy);
 
-
 	enum Type {
 
 		NORMAL,

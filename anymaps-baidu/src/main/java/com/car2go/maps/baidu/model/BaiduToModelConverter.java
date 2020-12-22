@@ -23,7 +23,6 @@ import com.car2go.maps.model.VisibleRegion;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  * Converts Baidu objects to model objects.
  */

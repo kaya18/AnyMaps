@@ -39,5 +39,4 @@ public class MapsConfiguration implements com.car2go.maps.MapsConfiguration {
 		return unmodifiableSet(of(AnyMap.Feature.MAP_TYPES, AnyMap.Feature.TRAFFIC_LAYER, AnyMap.Feature.REVEALABLE));
 	}
 
-
 }

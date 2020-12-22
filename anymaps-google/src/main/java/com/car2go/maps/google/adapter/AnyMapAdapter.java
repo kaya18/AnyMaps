@@ -189,7 +189,7 @@ public class AnyMapAdapter {
 	/**
 	 * Convenience for {@link #map(Object)} which works on a {@link List} of objects.
 	 *
-	 * @param type type of input objects being adapted
+	 * @param type  type of input objects being adapted
 	 * @param input list of objects being adapted
 	 * @return list of adapted objects
 	 */
